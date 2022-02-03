@@ -28,3 +28,26 @@ let person2 : { name: string, age: number } = {
 
 // ts 진위값
 let show: boolean = true;
+
+// ts enum
+enum Avengers { Capt, IronMan, Thor};
+let hero1: Avengers = Avengers.Capt;
+let hero2: Avengers = Avengers.Capt[2];
+
+// ts any 어떤 타입도 허용
+let str3: any = 'hi';
+let num3: any = 10;
+let arr3: any=[1,'10', 'string'];
+
+// ts void ==> 변수에는 undefined와 null만 할당하고 함수에는 반환값을 설정할 수 없는 타입
+let unuseful: void = undefined;
+function notUse(): void {
+    console.log('no return');
+}
+
+// ts never ==> 함수의 끝에 절대 도달하지 않는다
+function neverEnd(): never {
+    while(true){
+        
+    }
+}
