@@ -1,20 +1,22 @@
-interface PhoneNumberDictionary {
-    [phone: string]: { // ['phone'] 랑 동일함.. 대신 key가 string으로 와야한다를 정의
-        num: number; // key : value(number)
-    };
-}
+// interface PhoneNumberDictionary {
+//     [phone: string]: { // ['phone'] 랑 동일함.. 대신 key가 string으로 와야한다를 정의
+//         num: number; // key : value(number)
+//     };
+// }
+//
+// interface Contact {
+//     name: string;
+//     address: string;
+//     phones: PhoneNumberDictionary;
+// }
+//
+// enum PhoneType {
+//     Home = 'home',
+//     Office = 'office',
+//     Studio = 'studio'
+// }
 
-interface Contact {
-    name: string;
-    address: string;
-    phones: PhoneNumberDictionary;
-}
-
-enum PhoneType {
-    Home = 'home',
-    Office = 'office',
-    Studio = 'studio'
-}
+import {Contact, PhoneType} from './index'
 
 //api
 // TODO: 아래의 함수의 반환 타입을 지정
